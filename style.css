@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+}
+body {
+    background-color: silver;
+    padding: 20px;
+}
+input {
+    background-color: silver;
+    border: 2px solid teal;
+    height: 30px;
+    font-size: 20px;
+    width: 500px;
+    padding-left: 5px;
+    transition: filter 0.5s;
+}
+input:hover {
+    filter: brightness(1.2);
+}
+input:focus {
+    filter: brightness(1.2);
+    outline: none;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 750px;
+    margin: 0 auto;
+}
+#create_button {
+    width: 200px;
+    height: 30px;
+    border: 2px solid teal;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: silver;
+    transition: filter 0.5s;
+}
+#create_button:hover {
+    filter: brightness(1.2);
+}
+#todo_list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 750px;
+    margin: 50px auto;
+    transition: all 0.5s;
+}
+.block_text {
+    width: 100%;
+    border: 1px solid teal;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+h3  {
+    font-size: 25px;
+}
+.delete_button {
+    width: 150px;
+    height: 40px;
+    border: 1px solid black;
+    cursor: pointer;
+    background: #fd6060;
+    color: white;
+    font-size: 20px;
+    transition: background .5s;
+}
+.hide {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+.delete_button:hover {
+    background: #ff0000;
+}
+.edit_button {
+    width: 150px;
+    height: 40px;
+    border: 1px solid black;
+    cursor: pointer;
+    background: #ffb700;
+    color: black;
+    font-size: 20px;
+    transition: background .5s;
+}
+.edit_button:hover {
+    background: #ffff5c;
+}
+.div_button {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+}
